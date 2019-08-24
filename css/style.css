@@ -25,6 +25,7 @@ h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+    color: var(--text);
 }
 
 .header {
@@ -38,8 +39,16 @@ h1 {
 }
 
 .hero {
-    border: 2px solid lime;
     height: 300px;
+    background-color: var(--primary-color);
+    background-image: url("../img/hero.jpg");
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.hero strong {
+    color:#64ffda;
 }
 
 .project-details {
