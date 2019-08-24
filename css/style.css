@@ -26,3 +26,14 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
 }
+
+.project-details {
+    border: 2px solid red;
+    width: 500px;
+}
+
+.project-img-container {
+    border: 2px solid blue;
+    width: 500px;
+}
+
