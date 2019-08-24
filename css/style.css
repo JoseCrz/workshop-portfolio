@@ -2,7 +2,7 @@
     --dark-primary-color: #00796B;
     --light-primary-color: #B2DFDB;
     --primary-color: #009688;
-    --text: #FFFFFF;
+    --text: #FFF;
     --accent-color: #607D8B;
     --primary-text: #212121;
     --secondary-text: #757575;
@@ -25,6 +25,21 @@ h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+}
+
+.header {
+    background: var(--dark-primary-color);
+    color: var(--text);
+}
+
+.header a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.hero {
+    border: 2px solid lime;
+    height: 300px;
 }
 
 .project-details {
