@@ -120,6 +120,26 @@ h2 {
     width: 500px;
 }
 
+.experience-container {
+    display: flex;
+}
+
+.experience {
+    margin: 10px;
+    width: 480px;
+    background: white;
+}
+
+.experience-img-container {
+    margin: 0;
+}
+
+.experience-img {
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+}
+
 .footer {
     background: var(--dark-primary-color);
     display: flex;
