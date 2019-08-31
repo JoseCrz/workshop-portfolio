@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--body-font);
+    background: var(--light-primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +28,14 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: var(--text);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 35px;
 }
 
 .header {
@@ -68,16 +77,7 @@ h1 {
 }
 
 .portafolio {
-    background: var(--light-primary-color);
     padding: 20px;
-}
-
-.portafolio h2 {
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 35px;
 }
 
 .project {
