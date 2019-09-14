@@ -341,9 +341,9 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-    /* body {
-        background: purple;
-    } */
+    .project-details {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px) {
