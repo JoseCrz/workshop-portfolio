@@ -114,7 +114,7 @@ h2 {
 
 .project-details {
     /* border: 2px solid red; */
-    width: 500px;
+    width: 50%;
 }
 
 .project-title {
@@ -134,7 +134,12 @@ h2 {
 
 .project-img-container {
     /* border: 2px solid blue; */
-    width: 500px;
+    margin: 0;
+    width: 50%;
+}
+
+.project-img {
+    width: 100%;
 }
 
 .experience-container {
@@ -299,6 +304,39 @@ h2 {
     .navbar-item {
         margin: 25px 0;
         text-align: center;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-details {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .project-title {
+        font-size: 2em;
+    }
+
+    .project-subtitle {
+        font-size: 1.4em;
+    }
+    
+    .project-date {
+        font-size: 1em;
+    }
+    
+    .project-url {
+        font-size: 1em;
+    }
+    
+    .project-description {
+        font-size: 1.2em;
+    }
+
+    .project-img-container {
+        width: 100%;
     }
 }
 
