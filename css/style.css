@@ -43,12 +43,13 @@ h2 {
 
 .wrapper {
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: inherit;
+    flex: 1;
 }
 
 .header {
@@ -60,13 +61,13 @@ h2 {
     flex-wrap: wrap;
 }
 
-.header ul {
+.navbar-ul {
     list-style: none;
     display: flex;
     padding: 0;
 }
 
-.header ul li {
+.navbar-item {
     margin: 0 10px;
 }
 
@@ -280,11 +281,25 @@ h2 {
         background: red;
     } */
 }
+/* ?IPAD MEDIA QUERY */
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+    }
 
-@media screen and (max-width: 768px) {
-    /* body {
-        background: blue;
-    } */
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-ul {
+        display: block;
+    }
+
+    .navbar-item {
+        margin: 25px 0;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
