@@ -388,6 +388,10 @@ h2 {
         align-items: center;
         margin-bottom: 15px;
     }
+
+    .footer {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 320px) {
