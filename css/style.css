@@ -42,6 +42,7 @@ h2 {
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
+    flex-direction: inherit;
     align-items: inherit;
     flex-wrap: inherit;
     flex: 1;
@@ -366,14 +367,26 @@ h2 {
     .project-details {
         font-size: 12px;
     }
-    /* ! 480px */
-
+    
     .experience {
         width: 90%;
     }
-
+    
     .experience-img {
         width: 100%;
+    }
+    
+    /* ! 480px */
+    .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
     }
 }
 
