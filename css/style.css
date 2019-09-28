@@ -24,12 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: -.2px;
-    color: var(--text);
-}
+
 
 h2 {
     color: var(--primary-color);
@@ -77,15 +72,26 @@ h2 {
 }
 
 .hero {
-    height: 300px;
+    /* height: 300px; */
+    font-size: 24px;
+    padding: 80px 0;
     background-color: var(--primary-color);
-    /* background-image: url("../img/hero.jpg"); */
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    background-image: url("../img/hero.jpg");
+    background-size: 100% auto;
+    background-position: center;
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    
+}
+
+.hero-title {
+    font-size: 1.8em;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: var(--text);
 }
 
 .hero strong {
@@ -288,6 +294,10 @@ h2 {
 }
 /* ?IPAD MEDIA QUERY */
 @media screen and (max-width: 767px) {
+    .hero {
+        font-size: 18px;
+    }
+
     .header {
         display: block;
     }
@@ -299,10 +309,11 @@ h2 {
 
     .navbar-ul {
         display: block;
+        margin: 0;
     }
 
     .navbar-item {
-        margin: 25px 0;
+        margin-top: 25px;
         text-align: center;
     }
 
@@ -341,6 +352,10 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+    .hero {
+        font-size: 12px; 
+    }
+    
     .project-details {
         font-size: 12px;
     }
@@ -350,4 +365,8 @@ h2 {
     /* body {
         background: peru;
     } */
+
+    .hero{
+        padding: 40px 0;
+    }
 }
