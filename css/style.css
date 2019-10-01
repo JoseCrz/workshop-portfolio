@@ -113,7 +113,7 @@ h2 {
 
 .project-details {
     /* border: 2px solid red; */
-    width: 500px;
+    width: 50%;
 }
 
 .project-title {
@@ -133,7 +133,12 @@ h2 {
 
 .project-img-container {
     /* border: 2px solid blue; */
-    width: 500px;
+    width: 50%;
+    margin: 0;
+}
+
+.project-img {
+    width: 100%;
 }
 
 .experience-container {
@@ -292,6 +297,19 @@ h2 {
 
     .logo {
         text-align: center;
+    }
+
+    /* ! 767px */
+    .project {
+        display: block;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .project-img-container {
+        width: 100%;
     }
 }
 
