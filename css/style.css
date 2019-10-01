@@ -77,15 +77,14 @@ h2 {
 }
 
 .hero {
-    height: 300px;
     background-color: var(--primary-color);
-    /* background-image: url("../img/hero.jpg"); */
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url("../img/hero.jpg");
+    background-size: 100% auto;
+    padding: 100px 0;
+    background-position: center;
 }
 
 .hero strong {
@@ -297,9 +296,17 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
 
+    .hero {
+        padding: 60px 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
-
+    h1 {
+        font-size: 20px;
+    }
 }
