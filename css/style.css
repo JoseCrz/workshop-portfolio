@@ -49,6 +49,7 @@ h2 {
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: inherit;
+    flex-direction: inherit;
     flex: 1;
 }
 
@@ -196,11 +197,11 @@ h2 {
 .contact {
     background: var(--primary-color);
     color: var(--text);
-    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .contact-form-label {
@@ -324,6 +325,21 @@ h2 {
 
     .hero {
         padding: 60px 0;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
     }
 }
 
