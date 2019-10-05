@@ -1,3 +1,36 @@
+/* ? EXTERNAL CSS */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tc7q2y');
+    src:  url('../fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tc7q2y') format('truetype'),
+      url('../fonts/icomoon.woff?tc7q2y') format('woff'),
+      url('../fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+/* ? MY CSS */
 :root {
     --body-color: #e0f2f1;
     --dark-primary-color: #00796B;
@@ -37,7 +70,7 @@ h2 {
 /* * CLASES UTILITARIAS */
 
 .wrapper {
-    /* border: 1px solid red; */
+    /* border: 2px solid red; */
     max-width: 1000px;
     margin: 0 auto;
     display: inherit;
@@ -46,6 +79,23 @@ h2 {
     align-items: inherit;
     flex-wrap: inherit;
     flex: 1;
+    padding: 0 .5rem;
+}
+
+.burger-button {
+    font-size: 40px;
+    color: white;
+    background: var(--dark-primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
 }
 
 .header {
@@ -302,6 +352,9 @@ h2 {
 }
 /* ?IPAD MEDIA QUERY */
 @media screen and (max-width: 767px) {
+    .burger-button {
+        display: flex;
+    }
     .hero {
         font-size: 18px;
     }
