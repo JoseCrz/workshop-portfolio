@@ -355,6 +355,36 @@ h2 {
     .burger-button {
         display: flex;
     }
+
+    .menu {
+        position: fixed;
+        background: var(--dark-primary-color);
+        z-index: 98;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .navbar-ul {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar-item {
+        font-size: 36px;
+    }
+
     .hero {
         font-size: 18px;
     }
@@ -366,11 +396,6 @@ h2 {
     .logo {
         margin: 0;
         text-align: center;
-    }
-
-    .navbar-ul {
-        display: block;
-        margin: 0;
     }
 
     .navbar-item {
